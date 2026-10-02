@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Max Q Games</title>
+<meta name="description" content="Max Q Games is an independent game studio. Our current game is Apex Armada, a spaceship auto battler coming to Steam Early Access.">
+<meta name="theme-color" content="#04060c">
+<meta name="color-scheme" content="dark">
+<meta name="darkreader-lock">
+<link rel="canonical" href="https://maxq.games/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Max Q Games">
+<meta property="og:title" content="Max Q Games">
+<meta property="og:description" content="An independent game studio. Now building Apex Armada, a spaceship auto battler.">
+<meta property="og:url" content="https://maxq.games/">
+<meta property="og:image" content="https://maxq.games/assets/og-studio.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The Max Q Games logo, a white Q with a blue rocket trail, over a night sky.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@maxqdev">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/assets/icon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preload" href="/fonts/michroma-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/plexmono-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/studio.css">
+<script defer src="/assets/studio.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="bar">
+  <a class="bar__home" href="/" aria-label="Max Q Games home">
+    <img src="/assets/img/q-mark-256.png" alt="" width="28" height="28">
+    <span>MAX Q GAMES</span>
+  </a>
+  <nav class="bar__nav" aria-label="Main">
+    <a href="/apex-armada/">Apex Armada</a>
+    <a href="#comms">Contact</a>
+  </nav>
+</header>
+
+<main id="main">
+
+  <section class="hero" id="liftoff" data-t="0" aria-labelledby="hero-title">
+    <picture class="hero__sky">
+      <source media="(max-aspect-ratio: 1/1)" type="image/avif" srcset="/assets/img/sky-portrait-720.avif 720w, /assets/img/sky-portrait-1215.avif 1215w" sizes="100vw">
+      <source media="(max-aspect-ratio: 1/1)" type="image/webp" srcset="/assets/img/sky-portrait-720.webp 720w, /assets/img/sky-portrait-1215.webp 1215w" sizes="100vw">
+      <source type="image/avif" srcset="/assets/img/sky-1280.avif 1280w, /assets/img/sky-1920.avif 1920w, /assets/img/sky-2880.avif 2880w" sizes="100vw">
+      <source type="image/webp" srcset="/assets/img/sky-1280.webp 1280w, /assets/img/sky-1920.webp 1920w, /assets/img/sky-2880.webp 2880w" sizes="100vw">
+      <img src="/assets/img/sky-1920.jpg" alt="" width="1920" height="1080" fetchpriority="high" decoding="async">
+    </picture>
+
+    <svg class="hero__plot" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+      <defs>
+        <linearGradient id="trail" x1="0" y1="1" x2="1" y2="0">
+          <stop offset="0" stop-color="#0899fe" stop-opacity="0"/>
+          <stop offset=".35" stop-color="#0899fe" stop-opacity=".55"/>
+          <stop offset="1" stop-color="#3bc8fe" stop-opacity=".95"/>
+        </linearGradient>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+          <feGaussianBlur stdDeviation="6" result="b"/>
+          <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+      </defs>
+      <path class="plot__glow" d="M 420 900 C 900 860, 1200 700, 1330 210" fill="none" stroke="url(#trail)" stroke-width="7" filter="url(#glow)"/>
+      <path class="plot__flown" d="M 420 900 C 900 860, 1200 700, 1330 210" fill="none" stroke="url(#trail)" stroke-width="2"/>
+      <path class="plot__plan" d="M 1330 210 C 1370 120, 1450 60, 1600 20" fill="none" stroke="#3bc8fe" stroke-opacity=".5" stroke-width="1.5" stroke-dasharray="2 10"/>
+      <g class="plot__ticks" font-family="IBM Plex Mono, monospace" font-size="13" letter-spacing="2" fill="#cfe6ff">
+        <g transform="translate(858 805)"><circle r="4" fill="#04060c" stroke="#3bc8fe" stroke-width="1.5"/><text x="14" y="22">T+00:01:11  MAX Q</text></g>
+        <g transform="translate(1167 568)"><circle r="4" fill="#04060c" stroke="#3bc8fe" stroke-width="1.5"/><text x="14" y="22">T+00:02:31  STAGE SEP</text></g>
+        <g transform="translate(1330 210)"><circle r="6" fill="#3bc8fe"/><circle class="plot__ping" r="6" fill="none" stroke="#3bc8fe"/><text x="16" y="24">YOU ARE HERE</text></g>
+      </g>
+    </svg>
+
+    <div class="hero__inner">
+      <img class="hero__logo" src="/assets/img/maxq-logo-631.png" alt="Max Q Games logo: a white letter Q with a blue rocket trail arcing through it" width="631" height="714">
+      <div class="hero__copy">
+        <p class="event"><span>T+00:00:00</span> Liftoff</p>
+        <h1 id="hero-title">MAX&nbsp;Q GAMES</h1>
+        <p class="lede">An independent studio making games. Right now, that's <a href="/apex-armada/">Apex Armada</a>.</p>
+        <div class="hero__cta">
+          <a class="btn btn--solid" href="/apex-armada/">See Apex Armada</a>
+          <a class="btn" href="#comms">Get in touch</a>
+        </div>
+      </div>
+    </div>
+    <a class="hero__down" href="#maxq" aria-label="Scroll to the next section"><span>Scroll to climb</span></a>
+  </section>
+
+  <div class="flight">
+
+    <section class="stage stage--maxq" id="maxq" data-t="71" aria-labelledby="maxq-title">
+      <p class="event"><span>T+00:01:11</span> Max Q</p>
+      <div class="stage__grid">
+        <div class="define">
+          <h2 id="maxq-title" class="define__word">max q</h2>
+          <p class="define__kind">noun &middot; rocketry</p>
+          <p class="define__body">The moment in a launch when the air pushes hardest against the rocket. Every rocket that makes it to space has to fly through it.</p>
+          <p class="define__note">That's where our name comes from.</p>
+        </div>
+        <figure class="cam">
+          <picture>
+            <source media="(max-width: 700px)" type="image/avif" srcset="/assets/img/maxq-tall-800.avif 800w, /assets/img/maxq-tall-1400.avif 1400w" sizes="92vw">
+            <source media="(max-width: 700px)" type="image/webp" srcset="/assets/img/maxq-tall-800.webp 800w, /assets/img/maxq-tall-1400.webp 1400w" sizes="92vw">
+            <source type="image/avif" srcset="/assets/img/maxq-960.avif 960w, /assets/img/maxq-1600.avif 1600w, /assets/img/maxq-2400.avif 2400w" sizes="(min-width: 1100px) 56vw, 92vw">
+            <source type="image/webp" srcset="/assets/img/maxq-960.webp 960w, /assets/img/maxq-1600.webp 1600w, /assets/img/maxq-2400.webp 2400w" sizes="(min-width: 1100px) 56vw, 92vw">
+            <img src="/assets/img/maxq-1600.jpg" alt="A white rocket climbing through a dark blue dusk sky, wrapped in a ring of white vapor as it pushes through the air." width="1600" height="900" loading="lazy" decoding="async">
+          </picture>
+          <figcaption class="cam__hud" aria-hidden="true">
+            <span class="cam__tl">TRACKING CAM 2</span>
+            <span class="cam__tr">REC <i></i></span>
+            <span class="cam__bl">DYNAMIC PRESSURE</span>
+            <span class="cam__br">PEAK</span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="stage stage--game" id="game" data-t="151" aria-labelledby="game-title">
+      <p class="event"><span>T+00:02:31</span> Stage separation</p>
+      <h2 id="game-title" class="kicker">Now launching</h2>
+      <a class="payload" href="/apex-armada/" aria-label="Apex Armada: visit the game page">
+        <picture class="payload__art">
+          <source type="image/avif" srcset="/assets/img/apex-key-1280.avif 1280w, /assets/img/apex-key-2400.avif 2400w" sizes="(min-width: 1400px) 1280px, 94vw">
+          <source type="image/webp" srcset="/assets/img/apex-key-1280.webp 1280w, /assets/img/apex-key-2400.webp 2400w" sizes="(min-width: 1400px) 1280px, 94vw">
+          <img src="/assets/img/apex-key-1280.jpg" alt="" width="1280" height="443" loading="lazy" decoding="async">
+        </picture>
+        <span class="payload__body">
+          <picture>
+            <source type="image/webp" srcset="/assets/img/apex-logo-640.webp 640w, /assets/img/apex-logo-1200.webp 1200w" sizes="(min-width: 900px) 520px, 76vw">
+            <img class="payload__logo" src="/assets/img/apex-logo-640.png" alt="Apex Armada" width="640" height="233" loading="lazy" decoding="async">
+          </picture>
+          <span class="payload__text">A spaceship auto battler. Build a fleet, pick one of 12 alien captains, and take on fleets built by real players.</span>
+          <span class="payload__meta"><span>Coming to Steam Early Access</span><span class="payload__go">Visit the game page <b aria-hidden="true">&rarr;</b></span></span>
+        </span>
+      </a>
+    </section>
+
+    <section class="stage stage--comms" id="comms" data-t="530" aria-labelledby="comms-title">
+      <p class="event"><span>T+00:08:50</span> Orbit</p>
+      <h2 id="comms-title" class="comms__title">Say hello</h2>
+      <ul class="comms">
+        <li>
+          <span class="comms__ch">MAIL</span>
+          <a href="mailto:fonz@maxq.games"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18v14H3z M3 6l9 7 9-7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>fonz@maxq.games</a>
+          <span class="comms__note">Questions, press and business</span>
+        </li>
+        <li>
+          <span class="comms__ch">DISCORD</span>
+          <a href="https://discord.gg/w8mtQxCcVR" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M19.3 5.3A16.6 16.6 0 0 0 15.2 4l-.5 1a15.4 15.4 0 0 0-5.4 0L8.8 4a16.6 16.6 0 0 0-4.1 1.3C2.1 9.2 1.4 13 1.8 16.8a16.7 16.7 0 0 0 5 2.5l1.1-1.7c-.6-.2-1.2-.5-1.7-.9l.4-.3a11.9 11.9 0 0 0 10.4 0l.4.3c-.5.4-1.1.7-1.7.9l1.1 1.7a16.7 16.7 0 0 0 5-2.5c.5-4.4-.8-8.2-2.5-11.5ZM8.5 14.5c-1 0-1.8-.9-1.8-2s.8-2 1.8-2 1.8.9 1.8 2-.8 2-1.8 2Zm7 0c-1 0-1.8-.9-1.8-2s.8-2 1.8-2 1.8.9 1.8 2-.8 2-1.8 2Z"/></svg>Join the Max Q Discord</a>
+          <span class="comms__note">Chat with us and other players</span>
+        </li>
+        <li>
+          <span class="comms__ch">X</span>
+          <a href="https://x.com/maxqdev" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.8 3h3.1l-6.8 7.7L22 21h-6.2l-4.9-6.4L5.3 21H2.2l7.2-8.3L1.8 3h6.4l4.4 5.8L17.8 3Zm-1.1 16.2h1.7L7.4 4.7H5.6l11.1 14.5Z"/></svg>@maxqdev</a>
+          <span class="comms__note">News and screenshots</span>
+        </li>
+        <li>
+          <span class="comms__ch">PRIVACY</span>
+          <a href="mailto:privacy@maxq.games"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v5c0 4.5-3 8.3-7 10-4-1.7-7-5.5-7-10V6l7-3z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>privacy@maxq.games</a>
+          <span class="comms__note">See the <a href="/apex-armada-privacy/">Apex Armada privacy policy</a></span>
+        </li>
+      </ul>
+    </section>
+  </div>
+</main>
+
+<footer class="foot">
+  <p>&copy; 2026 Max Q Games</p>
+  <p><a href="/apex-armada/">Apex Armada</a><a href="/apex-armada-privacy/">Apex Armada privacy policy</a><a href="mailto:privacy@maxq.games">privacy@maxq.games</a></p>
+</footer>
+
+<aside class="telemetry" aria-hidden="true">
+  <div class="telemetry__row"><span>MISSION</span><b>MAX Q GAMES</b></div>
+  <div class="telemetry__row"><span>T+</span><b data-tm="t">00:00:00</b></div>
+  <div class="telemetry__row"><span>ALT</span><b data-tm="alt">0.0 KM</b></div>
+  <div class="telemetry__row"><span>VEL</span><b data-tm="vel">0 KM/H</b></div>
+  <div class="telemetry__q"><span>Q</span><i><em data-tm="q"></em></i><b data-tm="qlabel">LOW</b></div>
+  <div class="telemetry__ev" data-tm="ev">LIFTOFF</div>
+</aside>
+</body>
+</html>

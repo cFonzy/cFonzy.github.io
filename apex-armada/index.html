@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Apex Armada: a spaceship auto battler</title>
+<meta name="description" content="A spaceship auto battler where you build a fleet and take on real players. Choose from 12 alien captains, spend your gold on ships, guns, shields and other parts, then watch the battles play out.">
+<meta name="theme-color" content="#070b12">
+<meta name="color-scheme" content="dark">
+<meta name="darkreader-lock">
+<link rel="canonical" href="https://maxq.games/apex-armada/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Max Q Games">
+<meta property="og:title" content="Apex Armada">
+<meta property="og:description" content="A spaceship auto battler. Build a fleet, pick one of 12 alien captains, and take on fleets built by real players. Wishlist it on Steam.">
+<meta property="og:url" content="https://maxq.games/apex-armada/">
+<meta property="og:image" content="https://maxq.games/apex-armada/og-apex.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Apex Armada key art: a gold and white starship above a planet, a white-haired captain and the Apex Armada logo.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@maxqdev">
+<link rel="icon" href="/apex-armada/favicon.ico" sizes="any">
+<link rel="icon" href="/apex-armada/icon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="/apex-armada/apple-touch-icon.png">
+<link rel="manifest" href="/apex-armada/site.webmanifest">
+<link rel="preload" href="/fonts/rajdhani-700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/sourcesans3-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/apex-armada/apex.css">
+<script defer src="/apex-armada/apex.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="cmd">
+  <a class="cmd__brand" href="/apex-armada/" aria-label="Apex Armada, top of page">
+    <picture><source type="image/webp" srcset="/apex-armada/img/logo-horizontal-480.webp"><img src="/apex-armada/img/logo-horizontal-480.png" alt="Apex Armada" width="480" height="175"></picture>
+  </a>
+  <nav class="cmd__nav" aria-label="Apex Armada">
+    <a href="#trailer">Trailer</a>
+    <a href="#briefing">The game</a>
+    <a href="#captains">Captains</a>
+    <a href="#screens">Screenshots</a>
+    <a href="/apex-armada/press/">Press</a>
+  </nav>
+  <a class="btn btn--amber cmd__cta" href="https://store.steampowered.com/app/5364730/" rel="noopener">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2.2a9.8 9.8 0 0 0-9.8 9.1l5.3 2.2a2.8 2.8 0 0 1 1.6-.5h.2l2.3-3.4V9.5a3.7 3.7 0 1 1 3.7 3.7h-.1l-3.3 2.4v.1a2.8 2.8 0 0 1-5.5.6l-3.8-1.6A9.8 9.8 0 1 0 12 2.2Zm-4.1 15 1.2.5a2.1 2.1 0 1 0 1.2-2.8l-1.3-.5a1.6 1.6 0 1 1-1.1 2.8Zm9.4-7.7a2.5 2.5 0 1 0-2.5 2.5 2.5 2.5 0 0 0 2.5-2.5Zm-4.3 0a1.9 1.9 0 1 1 1.9 1.9 1.9 1.9 0 0 1-1.9-1.9Z"/></svg>
+    <span>Wishlist<span class="hide-s"> on Steam</span></span>
+  </a>
+</header>
+
+<main id="main">
+
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero__frame">
+      <picture>
+        <source type="image/avif" srcset="/apex-armada/img/hero-800.avif 800w, /apex-armada/img/hero-1280.avif 1280w, /apex-armada/img/hero-1920.avif 1920w, /apex-armada/img/hero-2880.avif 2880w" sizes="100vw">
+        <source type="image/webp" srcset="/apex-armada/img/hero-800.webp 800w, /apex-armada/img/hero-1280.webp 1280w, /apex-armada/img/hero-1920.webp 1920w, /apex-armada/img/hero-2880.webp 2880w" sizes="100vw">
+        <img src="/apex-armada/img/hero-1920.jpg" width="1920" height="1080" fetchpriority="high" decoding="async"
+             alt="Apex Armada key art: a gold and white Pleiadian starship flies above a blue planet, green Mantid ships close in from above, and a white-haired captain looks on.">
+      </picture>
+      <div class="hero__hud" aria-hidden="true">
+        <span class="hud-corner hud-corner--tl"></span><span class="hud-corner hud-corner--tr"></span>
+        <span class="hud-corner hud-corner--bl"></span><span class="hud-corner hud-corner--br"></span>
+        <span class="hud-label hud-label--tl">FLEET COMMAND</span>
+        <span class="hud-label hud-label--tr">CONTACTS: 4 FACTIONS</span>
+      </div>
+    </div>
+
+    <div class="brief panel">
+      <h1 id="hero-title" class="sr-only">Apex Armada</h1>
+      <p class="brief__tag">A spaceship auto battler</p>
+      <p class="brief__text">Build a fleet and take on real players. Choose from 12 alien captains to lead your fleet into battle. Spend your gold on ships, guns, shields and other parts. Then watch the battles play out as you climb the ranks to become a Galactic Conqueror.</p>
+      <div class="brief__cta">
+        <a class="btn btn--amber btn--big" href="https://store.steampowered.com/app/5364730/" rel="noopener">Wishlist on Steam</a>
+        <a class="btn btn--line btn--big" href="#trailer">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8 5v14l11-7z"/></svg>Watch the trailer</a>
+      </div>
+    </div>
+
+    <ul class="status" aria-label="Release status">
+      <li class="status__item status__item--live">
+        <span class="status__k">Launch</span>
+        <span class="status__v">Coming to Steam Early Access <b data-launch-date>Thursday, November 12, 2026</b></span>
+      </li>
+      <li class="status__item">
+        <span class="status__k">Free demo</span>
+        <span class="status__v">Coming before launch: lead the Grey Concord or the Pleiadian Accord</span>
+      </li>
+      <li class="status__item">
+        <span class="status__k">Fleet</span>
+        <span class="status__v">4 factions, 12 captains, 18 ships per faction, 90 parts</span>
+      </li>
+    </ul>
+  </section>
+
+  <section class="sect trailer" id="trailer" aria-labelledby="trailer-title">
+    <div class="sect__head">
+      <p class="eyebrow">Incoming transmission</p>
+      <h2 id="trailer-title">Watch the trailer</h2>
+    </div>
+    <div class="viewport viewport--trailer" data-youtube="REPLACE_WITH_YOUTUBE_ID">
+      <button class="trailer__play" type="button" aria-label="Play the Apex Armada trailer">
+        <picture>
+          <source type="image/avif" srcset="/apex-armada/img/trailer-poster-960.avif 960w, /apex-armada/img/trailer-poster-1920.avif 1920w" sizes="(min-width: 1400px) 1280px, 94vw">
+          <source type="image/webp" srcset="/apex-armada/img/trailer-poster-960.webp 960w, /apex-armada/img/trailer-poster-1920.webp 1920w" sizes="(min-width: 1400px) 1280px, 94vw">
+          <img src="/apex-armada/img/trailer-poster-960.jpg" alt="" width="1920" height="1080" loading="lazy" decoding="async">
+        </picture>
+      </button>
+      <span class="vp-tag vp-tag--tl" aria-hidden="true">CH 01 / TRAILER</span>
+      <span class="vp-tag vp-tag--br" aria-hidden="true">1080P60</span>
+    </div>
+    <p class="trailer__soon" hidden>The trailer goes live here soon. Until then, the clips below show the game in motion.</p>
+  </section>
+
+  <section class="sect briefing" id="briefing" aria-labelledby="briefing-title">
+    <div class="sect__head">
+      <p class="eyebrow">Mission briefing</p>
+      <h2 id="briefing-title">You build the fleet. The fight plays out on its own.</h2>
+      <p class="sect__lede">Apex Armada is a spaceship auto battler. You build the fleet. The fight plays out on its own, against a fleet built by a real player. Last ship standing wins.</p>
+    </div>
+
+    <div class="briefing__grid">
+      <nav class="tower" aria-label="Sections of the briefing">
+        <ol>
+          <li><a href="#captains"><b>01</b><span>Pick your captain</span></a></li>
+          <li><a href="#fleet"><b>02</b><span>Build your fleet</span></a></li>
+          <li><a href="#upgrade"><b>03</b><span>Upgrade your ships</span></a></li>
+          <li><a href="#battle"><b>04</b><span>Battle your fleet</span></a></li>
+          <li><a href="#conquer"><b>05</b><span>Conquer &amp; rank up</span></a></li>
+          <li><a href="#customize"><b>06</b><span>Customize</span></a></li>
+        </ol>
+      </nav>
+
+      <div class="briefs">
+
+        <article class="bf" id="captains" aria-labelledby="h-captains">
+          <h3 id="h-captains" class="bf__hdr">
+            <picture><source type="image/webp" srcset="/apex-armada/img/hdr-pick-your-captain-616.webp 616w, /apex-armada/img/hdr-pick-your-captain-1232.webp 1232w" sizes="(min-width: 1200px) 820px, 94vw">
+            <img src="/apex-armada/img/hdr-pick-your-captain-616.png" alt="Pick your captain" width="1232" height="199" loading="lazy" decoding="async"></picture>
+          </h3>
+          <p class="bf__intro">Every fleet needs someone in the big chair, and the captain you pick decides how you win.</p>
+
+          <div class="roster">
+            <section class="faction faction--pleiadian" aria-labelledby="f-pl">
+              <h4 id="f-pl" class="faction__name"><img src="/apex-armada/img/crest-pleiadian-96.webp" alt="" width="96" height="96" loading="lazy">Pleiadian Accord</h4>
+              <ul class="caps">
+                <li class="cap"><img src="/apex-armada/img/cap-seren-vael-320.webp" srcset="/apex-armada/img/cap-seren-vael-320.webp 320w, /apex-armada/img/cap-seren-vael-640.webp 640w" sizes="(min-width: 1200px) 200px, 30vw" alt="Portrait of Seren Vael" width="320" height="400" loading="lazy"><b>Seren Vael</b><span>Marks a target, and the whole fleet turns its guns on it.</span></li>
+                <li class="cap"><img src="/apex-armada/img/cap-ilya-maren-320.webp" srcset="/apex-armada/img/cap-ilya-maren-320.webp 320w, /apex-armada/img/cap-ilya-maren-640.webp 640w" sizes="(min-width: 1200px) 200px, 30vw" alt="Portrait of Ilya Maren" width="320" height="400" loading="lazy"><b>Ilya Maren</b><span>Stretches his shield over the ships beside him and dares the enemy to break through.</span></li>
+                <li class="cap"><img src="/apex-armada/img/cap-lyra-solenne-320.webp" srcset="/apex-armada/img/cap-lyra-solenne-320.webp 320w, /apex-armada/img/cap-lyra-solenne-640.webp 640w" sizes="(min-width: 1200px) 200px, 30vw" alt="Portrait of Lyra Solenne" width="320" height="400" loading="lazy"><b>Lyra Solenne</b><span>Keeps her fleet patched up and flying long after the enemy thinks it's scrap.</span></li>
+              </ul>
+            </section>
+            <section class="faction faction--grey" aria-labelledby="f-gr">
+              <h4 id="f-gr" class="faction__name"><img src="/apex-armada/img/crest-grey-96.webp" alt="" width="96" height="96" loading="lazy">Grey Concord</h4>
+              <ul class="caps">
+                <li class="cap"><img src="/apex-armada/img/cap-ixil-320.webp" srcset="/apex-armada/img/cap-ixil-320.webp 320w, /apex-armada/img/cap-ixil-640.webp 640w" sizes="(min-width: 1200px) 200px, 30vw" alt="Portrait of Ixil" width="320" height="400" loading="lazy"><b>Ixil</b><span>Slips into your ships' wiring mid-fight and turns your own guns around.</span></li>
+                <li class="cap"><img src="/apex-armada/img/cap-oruun-320.webp" srcset="/apex-armada/img/cap-oruun-320.webp 320w, /apex-armada/img/cap-oruun-640.webp 640w" sizes="(min-width: 1200px) 200px, 30vw" alt="Portrait of Oruun" width="320" height="400" loading="lazy"><b>Oruun</b><span>Slows everything on the other side, guns and skills alike, until the enemy fleet crawls.</span></li>
+                <li class="cap"><img src="/apex-armada/img/cap-vess-320.webp" srcset="/apex-armada/img/cap-vess-320.webp 320w, /apex-armada/img/cap-vess-640.webp 640w" sizes="(min-width: 1200px) 200px, 30vw" alt="Portrait of Vess" width="320" height="400" loading="lazy"><b>Vess</b><span>Shuts enemy ships down and takes whatever's loose, so even a loss fills the hold.</span></li>
+              </ul>
+            </section>
+            <section class="faction faction--draconian" aria-labelledby="f-dr">
+              <h4 id="f-dr" class="faction__name"><img src="/apex-armada/img/crest-draconian-96.webp" alt="" width="96" height="96" loading="lazy">Draconian Dominion</h4>
+              <ul class="caps">
+                <li class="cap"><img src="/apex-armada/img/cap-vraxis-kor-320.webp" srcset="/apex-armada/img/cap-vraxis-kor-320.webp 320w, /apex-armada/img/cap-vraxis-kor-640.webp 640w" sizes="(min-width: 1200px) 200px, 30vw" alt="Portrait of Vraxis Kor" width="320" height="400" loading="lazy"><b>Vraxis Kor</b><span>Gets meaner with every kill, his guns firing faster until nothing is left standing.</span></li>
+                <li class="cap"><img src="/apex-armada/img/cap-thessk-320.webp" srcset="/apex-armada/img/cap-thessk-320.webp 320w, /apex-armada/img/cap-thessk-640.webp 640w" sizes="(min-width: 1200px) 200px, 30vw" alt="Portrait of Thessk" width="320" height="400" loading="lazy"><b>Thessk</b><span>Plants his fleet up front, thickens every hull and simply refuses to move.</span></li>
+                <li class="cap"><img src="/apex-armada/img/cap-ghalek-320.webp" srcset="/apex-armada/img/cap-ghalek-320.webp 320w, /apex-armada/img/cap-ghalek-640.webp 640w" sizes="(min-width: 1200px) 200px, 30vw" alt="Portrait of Ghalek" width="320" height="400" loading="lazy"><b>Ghalek</b><span>Fires her boarding pods early, and they come back loaded with the enemy's parts.</span></li>
+              </ul>
+            </section>
+            <section class="faction faction--mantid" aria-labelledby="f-ma">
+              <h4 id="f-ma" class="faction__name"><img src="/apex-armada/img/crest-mantid-96.webp" alt="" width="96" height="96" loading="lazy">Mantid Brood</h4>
+              <ul class="caps">
+                <li class="cap"><img src="/apex-armada/img/cap-sszira-320.webp" srcset="/apex-armada/img/cap-sszira-320.webp 320w, /apex-armada/img/cap-sszira-640.webp 640w" sizes="(min-width: 1200px) 200px, 30vw" alt="Portrait of Sszira" width="320" height="400" loading="lazy"><b>Sszira</b><span>Sprays acid and backs off, and once the damage starts it never stops.</span></li>
+                <li class="cap"><img src="/apex-armada/img/cap-ktharr-320.webp" srcset="/apex-armada/img/cap-ktharr-320.webp 320w, /apex-armada/img/cap-ktharr-640.webp 640w" sizes="(min-width: 1200px) 200px, 30vw" alt="Portrait of Ktharr" width="320" height="400" loading="lazy"><b>Ktharr</b><span>Hatches a fresh drone from every wreck, so you have to chew through the swarm twice.</span></li>
+                <li class="cap"><img src="/apex-armada/img/cap-ommol-320.webp" srcset="/apex-armada/img/cap-ommol-320.webp 320w, /apex-armada/img/cap-ommol-640.webp 640w" sizes="(min-width: 1200px) 200px, 30vw" alt="Portrait of Ommol" width="320" height="400" loading="lazy"><b>Ommol</b><span>Ommol's swarm only gets stronger, and richer, the bigger it grows.</span></li>
+              </ul>
+            </section>
+          </div>
+
+          <p class="bf__close">Every captain flies their own Mothership into battle with a signature skill and new tricks to learn as the run goes on. Most of them talk, too, calling out the big moments mid-fight. And each one sets you an AGENDA: five goals for the run, with a reward for every one you hit.</p>
+          <figure class="viewport viewport--clip">
+            <video class="loop" muted loop playsinline controls preload="none" width="1232" height="630" poster="/apex-armada/media/pick-your-captain-poster.webp" aria-label="Gameplay clip: browsing all twelve captains, faction by faction">
+              <source src="/apex-armada/media/pick-your-captain.webm" type="video/webm">
+              <source src="/apex-armada/media/pick-your-captain.mp4" type="video/mp4">
+            </video>
+            <span class="vp-tag vp-tag--tl" aria-hidden="true">FEED 01</span>
+          </figure>
+        </article>
+
+        <article class="bf" id="fleet" aria-labelledby="h-fleet">
+          <h3 id="h-fleet" class="bf__hdr">
+            <picture><source type="image/webp" srcset="/apex-armada/img/hdr-build-your-fleet-616.webp 616w, /apex-armada/img/hdr-build-your-fleet-1232.webp 1232w" sizes="(min-width: 1200px) 820px, 94vw">
+            <img src="/apex-armada/img/hdr-build-your-fleet-616.png" alt="Build your fleet" width="1232" height="251" loading="lazy" decoding="async"></picture>
+          </h3>
+          <div class="bf__body">
+            <div class="bf__copy">
+              <p class="bf__intro">Every round you get gold to spend at the spaceport, and every ship you buy is a choice.</p>
+              <p>An escort plants itself up front and soaks up the hits. A support ship keeps the others patched up. A siege ship pounds the enemy from the back of the field. A mining ship skips the fight altogether and comes home with gold for next round.</p>
+              <p>Every faction flies 18 ships of its own, from quick little corvettes to huge battleships. Start small and grow your fleet to ten ships. Then drag them into your battle formation, because who stands at the front and who hangs back changes how the whole fight plays out.</p>
+            </div>
+            <figure class="viewport viewport--clip">
+              <video class="loop" muted loop playsinline controls preload="none" width="1232" height="738" poster="/apex-armada/media/build-your-fleet-poster.webp" aria-label="Gameplay clip: buying ships and placing them in the battle formation">
+                <source src="/apex-armada/media/build-your-fleet.webm" type="video/webm">
+                <source src="/apex-armada/media/build-your-fleet.mp4" type="video/mp4">
+              </video>
+              <span class="vp-tag vp-tag--tl" aria-hidden="true">FEED 02</span>
+            </figure>
+          </div>
+        </article>
+
+        <article class="bf" id="upgrade" aria-labelledby="h-upgrade">
+          <h3 id="h-upgrade" class="bf__hdr">
+            <picture><source type="image/webp" srcset="/apex-armada/img/hdr-upgrade-your-ships-616.webp 616w, /apex-armada/img/hdr-upgrade-your-ships-1232.webp 1232w" sizes="(min-width: 1200px) 820px, 94vw">
+            <img src="/apex-armada/img/hdr-upgrade-your-ships-616.png" alt="Upgrade your ships" width="1232" height="302" loading="lazy" decoding="async"></picture>
+          </h3>
+          <div class="bf__body bf__body--flip">
+            <div class="bf__copy">
+              <p class="bf__intro">A bare ship won't last long out there, and what you bolt on decides how it fights.</p>
+              <p>A Wormhole Drive drops your ship behind enemy lines to hunt their long-range ships. The Puppeteer cannon makes an enemy fire its next shot at its own side. A Cloak hides your ship until it opens fire. Acid eats through hulls, and once it's in, the damage keeps coming.</p>
+              <p>90 parts across guns, shields, engines and crew, and every port stocks something different. Buy a second copy of a ship and the two become one tougher ship, again and again until it reaches Apex, changes colour and unlocks an Apex Skill of its own. Parts level up the same way, or fuse two different ones into something brand new. And keep an eye out for the Black Market. It sells bonuses nobody else has.</p>
+            </div>
+            <figure class="viewport viewport--clip">
+              <video class="loop" muted loop playsinline controls preload="none" width="1232" height="770" poster="/apex-armada/media/upgrade-your-ships-poster.webp" aria-label="Gameplay clip: fitting parts to a ship">
+                <source src="/apex-armada/media/upgrade-your-ships.webm" type="video/webm">
+                <source src="/apex-armada/media/upgrade-your-ships.mp4" type="video/mp4">
+              </video>
+              <span class="vp-tag vp-tag--tl" aria-hidden="true">FEED 03</span>
+            </figure>
+          </div>
+        </article>
+
+        <article class="bf" id="battle" aria-labelledby="h-battle">
+          <h3 id="h-battle" class="bf__hdr">
+            <picture><source type="image/webp" srcset="/apex-armada/img/hdr-battle-your-fleet-616.webp 616w, /apex-armada/img/hdr-battle-your-fleet-1232.webp 1232w" sizes="(min-width: 1200px) 820px, 94vw">
+            <img src="/apex-armada/img/hdr-battle-your-fleet-616.png" alt="Battle your fleet" width="1232" height="255" loading="lazy" decoding="async"></picture>
+          </h3>
+          <div class="bf__body">
+            <div class="bf__copy">
+              <p class="bf__intro">Hit BATTLE, sit back, and watch every choice you made in port play out against a fleet built by a real player.</p>
+              <p>Boarding pods latch onto a ship whose shields are down and steal it for your side. Mines drift in the open space ahead of your fleet, and the first enemies to charge in fly straight into them. A Mantid swarm hatches fresh drones from its own wrecks, so you have to beat it twice. Then your captain's signature skill swings the whole fight.</p>
+              <p>Crank it up to four times the speed when you know how it ends. Win and you push on. Lose and it costs you one of your five lives.</p>
+            </div>
+            <figure class="viewport viewport--clip">
+              <video class="loop" muted loop playsinline controls preload="none" width="1232" height="694" poster="/apex-armada/media/battle-your-fleet-poster.webp" aria-label="Gameplay clip: two fleets fighting">
+                <source src="/apex-armada/media/battle-your-fleet.webm" type="video/webm">
+                <source src="/apex-armada/media/battle-your-fleet.mp4" type="video/mp4">
+              </video>
+              <span class="vp-tag vp-tag--tl" aria-hidden="true">FEED 04</span>
+            </figure>
+          </div>
+        </article>
+
+        <article class="bf" id="conquer" aria-labelledby="h-conquer">
+          <h3 id="h-conquer" class="bf__hdr">
+            <picture><source type="image/webp" srcset="/apex-armada/img/hdr-conquer-and-rank-up-616.webp 616w, /apex-armada/img/hdr-conquer-and-rank-up-1232.webp 1232w" sizes="(min-width: 1200px) 820px, 94vw">
+            <img src="/apex-armada/img/hdr-conquer-and-rank-up-616.png" alt="Conquer and rank up" width="1232" height="257" loading="lazy" decoding="async"></picture>
+          </h3>
+          <div class="bf__body bf__body--flip">
+            <div class="bf__copy">
+              <p class="bf__intro">Ten wins makes you a World Conqueror. That's where the real gamble starts.</p>
+              <p>Double Down for one more fight and a bigger title: System Conqueror, then Sector, then Galactic Conqueror. Lose and the run ends with the title you already earned. Win and you choose again. And every fight you play, win or lose, pushes your rank higher, from Drifter all the way to Void Emperor.</p>
+              <p>Play Ranked to climb the leaderboard, or play Casual when you just want a good run with nothing on the line. Or take on the Daily Run: every player gets the same captain and the same start, and one shot at the top of the day's board.</p>
+            </div>
+            <figure class="viewport viewport--clip">
+              <picture>
+                <source type="image/webp" srcset="/apex-armada/img/shot-09-640.webp 640w, /apex-armada/img/shot-09-1920.webp 1920w" sizes="(min-width: 1200px) 560px, 94vw">
+                <img src="/apex-armada/img/shot-09-640.jpg" alt="The World Conqueror screen after ten wins, offering a Double Down for a bigger title." width="1920" height="1080" loading="lazy" decoding="async">
+              </picture>
+              <span class="vp-tag vp-tag--tl" aria-hidden="true">FEED 05</span>
+            </figure>
+          </div>
+        </article>
+
+        <article class="bf" id="customize" aria-labelledby="h-customize">
+          <h3 id="h-customize" class="bf__hdr">
+            <picture><source type="image/webp" srcset="/apex-armada/img/hdr-customize-616.webp 616w, /apex-armada/img/hdr-customize-1232.webp 1232w" sizes="(min-width: 1200px) 820px, 94vw">
+            <img src="/apex-armada/img/hdr-customize-616.png" alt="Customize" width="1232" height="208" loading="lazy" decoding="async"></picture>
+          </h3>
+          <div class="bf__body">
+            <div class="bf__copy">
+              <p class="bf__intro">Make your fleet look like yours, and make sure everyone you fight knows it.</p>
+              <p>Pick a face for your profile from 64 alien portraits. Wrap it in a frame, and the rarest ones move. Repaint your ships in new colours. Fly your battles under a different sky.</p>
+              <p>120 pieces to collect, most of them earned as you hit milestones, plus matching sets like Supernova and Black Hole to complete. Your opponents see your look every time you meet.</p>
+            </div>
+            <figure class="viewport viewport--clip">
+              <video class="loop" muted loop playsinline controls preload="none" width="1232" height="694" poster="/apex-armada/media/customize-poster.webp" aria-label="Gameplay clip: choosing a profile portrait and frame">
+                <source src="/apex-armada/media/customize.webm" type="video/webm">
+                <source src="/apex-armada/media/customize.mp4" type="video/mp4">
+              </video>
+              <span class="vp-tag vp-tag--tl" aria-hidden="true">FEED 06</span>
+            </figure>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sect screens" id="screens" aria-labelledby="screens-title">
+    <div class="sect__head">
+      <p class="eyebrow">Sensor feed</p>
+      <h2 id="screens-title">Screenshots</h2>
+    </div>
+    <ul class="gallery">
+      <li><a href="/apex-armada/img/shot-01-1920.jpg" data-full="/apex-armada/img/shot-01-1920.webp"><img src="/apex-armada/img/shot-01-640.webp" alt="A Pleiadian fleet trades fire with Draconian warships beside a ringed planet." width="640" height="360" loading="lazy" decoding="async"></a></li>
+      <li><a href="/apex-armada/img/shot-03-1920.jpg" data-full="/apex-armada/img/shot-03-1920.webp"><img src="/apex-armada/img/shot-03-640.webp" alt="The spaceport: the Locker, ships and parts for sale, and the battle formation grid." width="640" height="360" loading="lazy" decoding="async"></a></li>
+      <li><a href="/apex-armada/img/shot-05-1920.jpg" data-full="/apex-armada/img/shot-05-1920.webp"><img src="/apex-armada/img/shot-05-640.webp" alt="Grey Concord ships fight a Pleiadian fleet." width="640" height="360" loading="lazy" decoding="async"></a></li>
+      <li><a href="/apex-armada/img/shot-07-1920.jpg" data-full="/apex-armada/img/shot-07-1920.webp"><img src="/apex-armada/img/shot-07-640.webp" alt="Choosing a faction: Pleiadian Accord, Draconian Dominion, Grey Concord and Mantid Brood." width="640" height="360" loading="lazy" decoding="async"></a></li>
+      <li><a href="/apex-armada/img/shot-10-1920.jpg" data-full="/apex-armada/img/shot-10-1920.webp"><img src="/apex-armada/img/shot-10-640.webp" alt="Captain Vraxis Kor's skills screen." width="640" height="360" loading="lazy" decoding="async"></a></li>
+      <li><a href="/apex-armada/img/shot-04-1920.jpg" data-full="/apex-armada/img/shot-04-1920.webp"><img src="/apex-armada/img/shot-04-640.webp" alt="A Mantid swarm battles Draconian ships." width="640" height="360" loading="lazy" decoding="async"></a></li>
+      <li><a href="/apex-armada/img/shot-11-1920.jpg" data-full="/apex-armada/img/shot-11-1920.webp"><img src="/apex-armada/img/shot-11-640.webp" alt="The victory results screen after a Mantid win." width="640" height="360" loading="lazy" decoding="async"></a></li>
+      <li><a href="/apex-armada/img/shot-09-1920.jpg" data-full="/apex-armada/img/shot-09-1920.webp"><img src="/apex-armada/img/shot-09-640.webp" alt="The World Conqueror screen." width="640" height="360" loading="lazy" decoding="async"></a></li>
+    </ul>
+  </section>
+
+  <section class="launch" aria-labelledby="launch-title">
+    <picture class="launch__bg">
+      <source type="image/avif" srcset="/apex-armada/img/space-1280.avif 1280w, /apex-armada/img/space-2560.avif 2560w" sizes="100vw">
+      <source type="image/webp" srcset="/apex-armada/img/space-1280.webp 1280w, /apex-armada/img/space-2560.webp 2560w" sizes="100vw">
+      <img src="/apex-armada/img/space-1280.jpg" alt="" width="1280" height="720" loading="lazy" decoding="async">
+    </picture>
+    <div class="launch__inner panel">
+      <picture><source type="image/webp" srcset="/apex-armada/img/emblem-bl-256.webp"><img class="launch__emblem" src="/apex-armada/img/emblem-bl-256.png" alt="" width="256" height="253" loading="lazy"></picture>
+      <h2 id="launch-title">Take command</h2>
+      <p>Wishlist Apex Armada on Steam and you'll hear the moment it launches.</p>
+      <a class="btn btn--amber btn--big" href="https://store.steampowered.com/app/5364730/" rel="noopener">Wishlist on Steam</a>
+    </div>
+  </section>
+
+  <section class="sect comms" id="community" aria-labelledby="comms-title">
+    <div class="sect__head">
+      <p class="eyebrow">Open channel</p>
+      <h2 id="comms-title">Join the crew</h2>
+    </div>
+    <ul class="channels">
+      <li><a class="channel panel" href="https://discord.gg/w8mtQxCcVR" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M19.3 5.3A16.6 16.6 0 0 0 15.2 4l-.5 1a15.4 15.4 0 0 0-5.4 0L8.8 4a16.6 16.6 0 0 0-4.1 1.3C2.1 9.2 1.4 13 1.8 16.8a16.7 16.7 0 0 0 5 2.5l1.1-1.7c-.6-.2-1.2-.5-1.7-.9l.4-.3a11.9 11.9 0 0 0 10.4 0l.4.3c-.5.4-1.1.7-1.7.9l1.1 1.7a16.7 16.7 0 0 0 5-2.5c.5-4.4-.8-8.2-2.5-11.5ZM8.5 14.5c-1 0-1.8-.9-1.8-2s.8-2 1.8-2 1.8.9 1.8 2-.8 2-1.8 2Zm7 0c-1 0-1.8-.9-1.8-2s.8-2 1.8-2 1.8.9 1.8 2-.8 2-1.8 2Z"/></svg>
+        <span><b>Discord</b><small>Talk fleets and captains with other players</small></span></a></li>
+      <li><a class="channel panel" href="https://x.com/maxqdev" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.8 3h3.1l-6.8 7.7L22 21h-6.2l-4.9-6.4L5.3 21H2.2l7.2-8.3L1.8 3h6.4l4.4 5.8L17.8 3Zm-1.1 16.2h1.7L7.4 4.7H5.6l11.1 14.5Z"/></svg>
+        <span><b>X</b><small>@maxqdev for news and screenshots</small></span></a></li>
+      <li><a class="channel panel" href="mailto:fonz@maxq.games">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18v14H3z M3 6l9 7 9-7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+        <span><b>Email</b><small>fonz@maxq.games</small></span></a></li>
+    </ul>
+  </section>
+</main>
+
+<footer class="foot">
+  <a class="foot__studio" href="/" aria-label="Max Q Games home">
+    <img src="/assets/img/q-mark-256.png" alt="" width="34" height="34" loading="lazy">
+    <span>A Max Q Games production</span>
+  </a>
+  <ul class="foot__links">
+    <li><a href="https://store.steampowered.com/app/5364730/" rel="noopener">Steam</a></li>
+    <li><a href="/apex-armada/press/">Press</a></li>
+    <li><a href="https://discord.gg/w8mtQxCcVR" rel="noopener">Discord</a></li>
+    <li><a href="https://x.com/maxqdev" rel="noopener">X</a></li>
+    <li><a href="mailto:fonz@maxq.games">fonz@maxq.games</a></li>
+  </ul>
+  <p class="foot__legal"><a href="/apex-armada-privacy/">Privacy policy</a> <span aria-hidden="true">/</span> <a href="mailto:privacy@maxq.games">privacy@maxq.games</a> <span aria-hidden="true">/</span> &copy; 2026 Max Q Games</p>
+</footer>
+
+<dialog class="lightbox" aria-label="Screenshot">
+  <form method="dialog"><button class="lightbox__close" aria-label="Close">&times;</button></form>
+  <img alt="">
+</dialog>
+</body>
+</html>
