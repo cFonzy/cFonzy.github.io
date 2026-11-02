@@ -112,7 +112,7 @@ body::before { content: ""; position: fixed; inset: 0; z-index: -1; pointer-even
 .trailer__play[aria-disabled="true"] { cursor: default; }
 .trailer__play[aria-disabled="true"]:hover img { filter: none; }
 .trailer__soon { margin: 18px 0 0; padding-left: 14px; border-left: 2px solid var(--amber); font: 600 17px/1.4 var(--head); letter-spacing: .06em; color: var(--dim); }
-.viewport--trailer iframe { display: block; width: 100%; aspect-ratio: 16 / 9; border: 0; }
+.viewport--trailer iframe, .viewport--trailer video { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; border: 0; background: #000; }
 
 .briefing__grid { display: grid; grid-template-columns: 250px minmax(0, 1fr); gap: clamp(28px, 4vw, 64px); align-items: start; }
 .tower { position: sticky; top: 96px; }
@@ -142,7 +142,7 @@ body::before { content: ""; position: fixed; inset: 0; z-index: -1; pointer-even
 .faction--pleiadian { --fc: #e9c46a; } .faction--grey { --fc: #5fe08a; } .faction--draconian { --fc: #ff6a3d; } .faction--mantid { --fc: #c9d64a; }
 .faction__name { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; font-size: 22px; letter-spacing: .1em; text-transform: uppercase; color: #fff; }
 .faction__name img { width: 44px; height: 44px; }
-.caps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.caps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
 .cap { display: flex; flex-direction: column; gap: 4px; font-size: .9rem; line-height: 1.4; color: var(--dim); }
 .cap img { width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; object-position: top; margin-bottom: 6px;
   background: radial-gradient(circle at 50% 30%, color-mix(in srgb, var(--fc) 22%, #111b2b), #0b1220 70%); border-bottom: 2px solid var(--fc);
@@ -221,7 +221,7 @@ body::before { content: ""; position: fixed; inset: 0; z-index: -1; pointer-even
   .hud-label { font-size: 10px; top: 6px; }
   .brief { width: calc(100% - 20px); margin-top: -18px; padding: 20px 18px; }
   .brief__cta .btn { flex: 1 1 100%; }
-  .caps { gap: 8px; }
+  .caps { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px 8px; }
   .cap { font-size: .82rem; }
   .cap b { font-size: 15px; }
   .faction { padding: 12px; }

@@ -34,8 +34,25 @@
   const slot = document.querySelector('[data-youtube]');
   if (slot) {
     const id = slot.dataset.youtube || '';
+    const file = slot.dataset.video || '';
     const btn = slot.querySelector('.trailer__play');
-    if (!/^[\w-]{11}$/.test(id)) {
+    if (!/^[\w-]{11}$/.test(id) && file) {
+      btn.addEventListener('click', () => {
+        const img = btn.querySelector('img');
+        const v = document.createElement('video');
+        v.src = file;
+        v.controls = true;
+        v.playsInline = true;
+        v.preload = 'auto';
+        v.width = 1920;
+        v.height = 1080;
+        if (img && img.currentSrc) v.poster = img.currentSrc;
+        v.setAttribute('aria-label', 'Apex Armada trailer');
+        btn.replaceWith(v);
+        v.play().catch(() => {});
+        v.focus();
+      });
+    } else if (!/^[\w-]{11}$/.test(id)) {
       btn.setAttribute('aria-disabled', 'true');
       btn.setAttribute('aria-label', 'Trailer coming soon');
       const soon = document.querySelector('.trailer__soon'); if (soon) soon.hidden = false;
