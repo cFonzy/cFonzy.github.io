@@ -54,7 +54,7 @@
       });
     } else if (!/^[\w-]{11}$/.test(id)) {
       btn.setAttribute('aria-disabled', 'true');
-      btn.setAttribute('aria-label', 'Trailer coming soon');
+      btn.setAttribute('aria-label', 'Trailer not available');
       const soon = document.querySelector('.trailer__soon'); if (soon) soon.hidden = false;
     } else {
       btn.addEventListener('click', () => {
